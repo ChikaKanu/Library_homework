@@ -21,4 +21,18 @@ public class Borrower {
         this.collection.add(book);
     }
 
+    public void removeBook(Book book) {
+        this.collection.remove(book);
+    }
+
+    public void borrowBook(Library collection) {
+        Book book = collection.removeBook();
+        addBook(book);
+    }
+
+//    public void returnBook(Library collection) {
+//        collection.addBook();
+//        removeBook(book);
+//    }
+
 }
