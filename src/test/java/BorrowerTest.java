@@ -15,7 +15,10 @@ public class BorrowerTest {
         book = new Book("Things Fall Apart", "Chinua Achebe", "Non Fiction");
     }
 
-    
+    @Test
+    public void canGetName() {
+        assertEquals("John", borrower.getName());
+    }
 
     @Test
     public void canCountBook() {
