@@ -49,17 +49,17 @@ public class BorrowerTest {
         assertEquals(0, collection.bookCount());
     }
 
-//    @Test
-//    public void canReturnBookToLibrary() {
-//        collection.addBook(book);
-//        collection.addBook(book);
-//        borrower.borrowBook(collection);
-//        assertEquals(1, collection.bookCount());
-//        assertEquals(1, borrower.bookCount());
-//        borrower.returnBook(collection);
-//        assertEquals(2, collection.bookCount());
-//        assertEquals(0, borrower.bookCount());
-//    }
+    @Test
+    public void canReturnBookToLibrary() {
+        collection.addBook(book);
+        collection.addBook(book);
+        borrower.borrowBook(collection);
+        assertEquals(1, collection.bookCount());
+        assertEquals(1, borrower.bookCount());
+        borrower.returnBook(collection, book);
+        assertEquals(2, collection.bookCount());
+        assertEquals(0, borrower.bookCount());
+    }
 
 
 }

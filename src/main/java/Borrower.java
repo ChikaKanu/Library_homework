@@ -30,9 +30,9 @@ public class Borrower {
         addBook(book);
     }
 
-//    public void returnBook(Library collection) {
-//        collection.addBook();
-//        removeBook(book);
-//    }
+    public void returnBook(Library collection, Book book) {
+        removeBook(book);
+        collection.addBook(book);
+    }
 
 }
