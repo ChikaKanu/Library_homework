@@ -9,7 +9,16 @@ public class Borrower {
         this.collection = new ArrayList<>();
     }
 
+    public String getName() {
+        return this.name;
+    }
 
+    public int bookCount() {
+        return this.collection.size();
+    }
 
+    public void addBook(Book book) {
+        this.collection.add(book);
+    }
 
 }
